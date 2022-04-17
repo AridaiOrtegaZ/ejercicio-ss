@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.04.17 a las 12:15:31 AM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://t4is.uv.mx/todo">
+    <schemaBindings map="false">
+      <package name="https.t4is_uv_mx.todo"/>
+    </schemaBindings>
+    <bindings scd="tns:MostrarResponse">
+      <class ref="https.t4is_uv_mx.todo.MostrarResponse"/>
+    </bindings>
+    <bindings scd="tns:AgregarRequest">
+      <class ref="https.t4is_uv_mx.todo.AgregarRequest"/>
+    </bindings>
+    <bindings scd="tns:AgregarResponse">
+      <class ref="https.t4is_uv_mx.todo.AgregarResponse"/>
+    </bindings>
+    <bindings scd="tns:EliminarRequest">
+      <class ref="https.t4is_uv_mx.todo.EliminarRequest"/>
+    </bindings>
+    <bindings scd="tns:EliminarResponse">
+      <class ref="https.t4is_uv_mx.todo.EliminarResponse"/>
+    </bindings>
+    <bindings scd="tns:ModificarRequest">
+      <class ref="https.t4is_uv_mx.todo.ModificarRequest"/>
+    </bindings>
+    <bindings scd="tns:ModificarResponse">
+      <class ref="https.t4is_uv_mx.todo.ModificarResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+

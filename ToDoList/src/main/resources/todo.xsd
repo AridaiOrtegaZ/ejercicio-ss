@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://t4is.uv.mx/todo"
+ xmlns:tns="https://t4is.uv.mx/todo"
+ elementFormDefault="qualified">
+
+ <xs:element name="AgregarRequest">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="descripcion" type="xs:string"/>
+    <xs:element name="estado" type="xs:string"/>
+  </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ <xs:element name="AgregarResponse">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="respuesta" type="xs:string"/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name="EliminarRequest">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />            
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+ <xs:element name="EliminarResponse">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="respuesta" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name="ListarRequest"/>
+ <xs:element name="ListarResponse">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="actividad" maxOccurs="unbounded">
+           <xs:complexType>
+             <xs:sequence>
+               <xs:element name="id" type="xs:int"/>
+               <xs:element name="nombre" type="xs:string"/>
+               <xs:element name="descripcion" type="xs:string"/>
+               <xs:element name="estado" type="xs:string"/>
+             </xs:sequence>
+           </xs:complexType>
+       </xs:element>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name="EditarRequest">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="descripcion" type="xs:string"/>
+      <xs:element name="estado" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditarResponse">
+    <xs:complexType>
+     <xs:sequence>
+        <xs:element name="respuesta" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+
+</xs:schema> 
