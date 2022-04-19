@@ -1,0 +1,8 @@
+Ejecutar:
+docker pull aridaioza/ejercicio-ss
+docker run -it --rm -p 8080:8080 aridaioza/ejercicio-ss
+
+Añadir en el link generado:
+/ws/todo.wsdl
+
+Disfrutar :D
